@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-12">
+              <div class="login-page" style="float: left">
+                <div class="form">
+
+                  <h1 class="display-4">FINGERNAIL DISEASE DETECTION</h1>
+                  <p class="lead">Welcome</p>
+                  <hr class="my-4">
+                  {% if smessage %}
+                    <div class="alert alert-success">
+                      {{ smessage }}
+                    </div>
+                  {% endif %}
+                  {% if umessage %}
+                    <div class="alert alert-danger">
+                      {{ umessage }}
+                    </div>
+                  {% endif %}
+                  <form action="/index"  class="login-form" method="post">
+
+                    <input type="email" name="name" placeholder="Email address"/>
+                    <input type="password" name="password" placeholder="Password"/>
+                    <button type="submit" name="submit">login</button>
+                          
+                  </form>
+                  <p class="message"><a href="/forgot_password">Forgot password ?</a> <a href="/create_account">Create account</a></p>
+                </div>
+              </div>
+
+              <div class="login-right"><br><br><br><br><br><br><br>
+              <img src="{{url_for('static', filename='nails1.jpg')}}" width="600px" height="433px" class="img-responsive" />
+            </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+{% endblock %}

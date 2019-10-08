@@ -1,0 +1,6 @@
+Werkzeug
+Flask
+gevent
+gunicorn
+stripe
+pyrebase

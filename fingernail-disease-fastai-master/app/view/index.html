@@ -1,0 +1,70 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+</head>
+<body>
+<div>
+  <div class='center'>
+    <div class='title'>Classify Fingernails Images for Disease Detection</div>
+    <p>
+      Use images of <strong>Fingernails</strong>
+    </p>
+    <div class='content'>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
+      </div>
+      <div>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+      </div>
+      <div class='analyze'>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+      </div>
+      <div class='result-label'>
+        <label id='result-label'></label>
+			<table border=1 frame=void rules=rows>
+			<tbody>
+			<tr>
+			<td><strong>&nbsp;Nail color</strong></td>
+			<td><strong>&nbsp;Disease symptoms</strong></td>
+			</tr>
+			<tr>
+			<td>&nbsp;Black</td>
+			<td>&nbsp;Cancer, Anemia, chronic kidney disease, B-12 deficiency, bacterial infection, , adrenal gland problems, liver disease, melanomas, silver deposits (heavy metals), trauma</td>
+			</tr>
+			<tr>
+			<td>&nbsp;Blue</td>
+			<td>&nbsp;heart disease, hepatitis, Atherosclerosis, blood is too thick, liver disease, COPD (lung disease), copper or silver poisoning, decreased hemoglobin, drug reactions, gas poisoning, high platelet counts, increased cholesterol, inflammation, kidneys with clogged arteries, lupus, prior strokes, rheumatoid arthritis, blood clots</td>
+			</tr>
+			<tr>
+			<td>&nbsp;Green</td>
+			<td>&nbsp;Allergies to cleaning agents, Bacillus infection, localized fungal infection, serious emphysema</td>
+			</tr>
+			<tr>
+			<td>&nbsp;Yellow</td>
+			<td>&nbsp;Bleeding, diabetes, digestive problems, liver disease, hyperthyroidism, lymphatic problems, nail fungus, poor circulation, respiratory problems, Vitamin E deficiency, fluid retention in the lymphatic system</td>
+			</tr>
+			<tr>
+			<td>&nbsp;White</td>
+			<td>&nbsp;Anemia, Candida (yeast), low life force, overall mineral deficiency, heart or lung problems, hemorrhage, hookworm infestation, kidney disease, liver disease, malnutrition, ulcers</td>
+			</tr>
+			</tbody>
+			</table>
+      </div> 
+	</div>
+	
+
+  </div>
+</div>
+</body>
+</html>
