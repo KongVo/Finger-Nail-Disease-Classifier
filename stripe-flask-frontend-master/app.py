@@ -24,13 +24,13 @@ app = Flask(__name__)
 
 import pyrebase
 config = {
-    "apiKey": "AIzaSyD8YCdMQtVXuGdRqbihCS96LZuQW0AJxBE",
-    "authDomain": "week5-43daa.firebaseapp.com",
-    "databaseURL": "https://week5-43daa.firebaseio.com",
-    "projectId": "week5-43daa",
+    "apiKey": "",
+    "authDomain": "",
+    "databaseURL": "",
+    "projectId": "",
     "storageBucket": "",
-    "messagingSenderId": "203066081429",
-    "appId": "1:203066081429:web:8f4ed471b6d012aff81b9c"
+    "messagingSenderId": "",
+    "appId": ""
 }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
@@ -69,8 +69,8 @@ def forgot_password():
     return render_template('forgot_password.html')
 
 
-pub_key = 'pk_test_OictnQqEPhJmZ8c41k3a4vTS00jmTyR7uz'
-secret_key = 'sk_test_J7olrDnryyfrcoqeSXbwfqgU00afQBfW74'
+pub_key = ''
+secret_key = ''
 
 
 stripe.api_key = secret_key
